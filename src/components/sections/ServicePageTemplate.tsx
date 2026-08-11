@@ -100,7 +100,7 @@ export function ServicePageTemplate(props: ServicePageProps) {
           <div className="grid lg:grid-cols-12 gap-xl">
             <div className="lg:col-span-5">
               <Reveal>
-                <SectionEyebrow>What's included</SectionEyebrow>
+                <SectionEyebrow>What&apos;s included</SectionEyebrow>
                 <SectionTitle>Everything covered, end-to-end</SectionTitle>
                 <SectionLede>
                   A single, fixed-fee engagement covers the entire scope. No surprise invoices, no scope creep.

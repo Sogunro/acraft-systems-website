@@ -77,7 +77,7 @@ export default function AboutPage() {
               </h1>
               <p className="mt-lg text-body-lg text-navy-100 max-w-2xl">
                 At {site.name}, we provide expert IT and telecom services to keep your business running smoothly.
-                Whether you're based in Agodi, Bodija, Iyaganku, Jericho or anywhere across Ibadan and the rest of
+                Whether you&apos;re based in Agodi, Bodija, Iyaganku, Jericho or anywhere across Ibadan and the rest of
                 Nigeria — our tailored solutions ensure your technology works seamlessly.
               </p>
             </Reveal>

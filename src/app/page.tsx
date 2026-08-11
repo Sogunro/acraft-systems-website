@@ -153,7 +153,7 @@ export default function HomePage() {
               <Reveal delay={0.05}>
                 <SectionLede>
                   Six service lines, one accountable partner. From day-to-day support to strategic transformation —
-                  we cover the full IT stack so you don't have to juggle vendors.
+                  we cover the full IT stack so you don&apos;t have to juggle vendors.
                 </SectionLede>
               </Reveal>
             </div>
@@ -178,7 +178,7 @@ export default function HomePage() {
                 <SectionEyebrow>Why {site.name}</SectionEyebrow>
                 <SectionTitle>An IT partner you can actually reach</SectionTitle>
                 <SectionLede>
-                  We earn our keep by being predictable, fast, and easy to deal with. Here's what that means in practice.
+                  We earn our keep by being predictable, fast, and easy to deal with. Here&apos;s what that means in practice.
                 </SectionLede>
                 <div className="mt-lg">
                   <Button href="/about" variant="navy" size="lg">

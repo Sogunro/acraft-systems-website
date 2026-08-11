@@ -51,7 +51,7 @@ export default function ContactPage() {
                     </div>
                     <h2 className="text-h3 text-navy-900 mb-sm">Message received</h2>
                     <p className="text-body text-muted max-w-md mx-auto">
-                      Thanks. We'll be in touch within one business hour. In the meantime, feel free to call us
+                      Thanks. We&apos;ll be in touch within one business hour. In the meantime, feel free to call us
                       directly on {site.phone}.
                     </p>
                   </div>
