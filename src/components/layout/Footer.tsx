@@ -4,8 +4,12 @@ import { Mail, MapPin, Phone } from 'lucide-react';
 import { nav, site } from '@/lib/site';
 import { Container } from '@/components/ui/Container';
 
+// Connectivity and Mobile stay in the main nav but are kept out of the footer,
+// which highlights the services the business leads with.
+const FOOTER_EXCLUDED = ['Connectivity', 'Mobile'];
+
 export function Footer() {
-  const columns = nav.filter((n) => n.children);
+  const columns = nav.filter((n) => n.children && !FOOTER_EXCLUDED.includes(n.label));
 
   return (
     <footer className="bg-navy-950 text-navy-100">

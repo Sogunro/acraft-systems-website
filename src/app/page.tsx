@@ -36,14 +36,14 @@ const services = [
     imageSrc: '/images/cards/card-cyber.png',
   },
   {
-    title: 'Microsoft 365',
-    description: 'Email, Teams, OneDrive and SharePoint — deployed, secured and supported end-to-end.',
+    title: 'Bespoke Software Engineering',
+    description: 'Custom applications and integrations built around how your business actually works.',
     href: '/connectivity/microsoft-365',
     imageSrc: '/images/cards/card-m365.png',
   },
   {
-    title: 'Cloud Phone System',
-    description: 'Modern VoIP hosted in the cloud — work from anywhere with one business number.',
+    title: 'Data Centre Management',
+    description: 'Racks, power, cooling and connectivity — monitored, maintained and kept online.',
     href: '/telecoms/cloud-phone-system',
     imageSrc: '/images/cards/card-cloud-phone.png',
   },
@@ -52,6 +52,12 @@ const services = [
     description: 'Strategic roadmaps, vendor selection and project delivery — aligned to your business goals.',
     href: '/it-services/it-consulting',
     imageSrc: '/images/cards/card-consulting.png',
+  },
+  {
+    title: 'Project Management',
+    description: 'Migrations, rollouts and office moves run to plan — scoped, scheduled and delivered on time.',
+    href: '/it-services/it-consulting',
+    imageSrc: '/images/cards/card-managed-it.png',
   },
 ];
 
