@@ -3,10 +3,10 @@ export const site = {
   legalName: 'Acraft Systems LTD',
   tagline: 'Your IT, Our Expertise',
   region: 'Nigeria',
-  phone: '+234 803 576 3159',
+  phone: '+234 815 659 5194',
   // Unspaced E.164 form for `tel:` hrefs — dialers handle this reliably,
   // whereas spaces in a tel: URI are not guaranteed to be parsed.
-  phoneDial: '+2348035763159',
+  phoneDial: '+2348156595194',
   email: 'info@acraftsystems.com',
   address: '13 Onikoko Avenue, Agodi GRA, Ibadan',
   hours: 'Mon–Fri, 8am–6pm WAT · 24/7 emergency support',
