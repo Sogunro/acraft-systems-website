@@ -29,10 +29,10 @@ const config: Config = {
           400: '#4D6B9C',
           500: '#2C4B7F',
           600: '#1E3A66',
-          700: '#152B4E',
-          800: '#0F1F38',
-          900: '#0A1628',
-          950: '#060E1A',
+          700: '#1C3763',
+          800: '#16294A',
+          900: '#102039',
+          950: '#0B172B',
         },
         accent: {
           DEFAULT: '#1FA8FF', // bright cyan-blue — matches the hero data-centre LEDs
@@ -44,7 +44,7 @@ const config: Config = {
           DEFAULT: '#E11D2E',
           hover: '#B8151F',
         },
-        ink: '#0A1628',
+        ink: '#102039',
         muted: '#5B6B82',
         line: '#E6EAEF',
         surface: '#F5F7FA',

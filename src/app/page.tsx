@@ -102,7 +102,7 @@ export default function HomePage() {
           className="object-cover object-center -z-10"
         />
         {/* Readability overlay: dark vignette stronger at edges, lighter centre */}
-        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-navy-950/76 via-navy-950/58 to-navy-950/84" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-navy-950/62 via-navy-950/42 to-navy-950/72" />
         <div className="absolute inset-0 -z-10 bg-radial-fade" />
         {/* Drifting node network. Sits above the vignette so the lines stay
             visible, but below the text, which is in a z-0 container. */}
