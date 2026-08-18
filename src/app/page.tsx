@@ -92,34 +92,33 @@ export default function HomePage() {
   return (
     <>
       {/* HERO — full-bleed background image */}
-      <section className="relative isolate overflow-hidden bg-navy-950 text-white min-h-[640px] md:min-h-[760px] flex items-center">
-        <Image
-          src="/images/heropage.png"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center -z-10"
+      <section className="relative isolate overflow-hidden bg-white text-navy-900 min-h-[620px] md:min-h-[720px] flex items-center">
+        {/* Soft tinted wash instead of a dark photo — keeps the hero light and
+            lets the headline carry the page. */}
+        <div className="absolute inset-0 -z-10 bg-gradient-to-br from-navy-50 via-white to-accent/10" />
+        <div
+          aria-hidden
+          className="absolute -top-40 -right-32 -z-10 h-[520px] w-[520px] rounded-full bg-accent/15 blur-3xl"
         />
-        {/* Readability overlay: dark vignette stronger at edges, lighter centre */}
-        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-navy-950/62 via-navy-950/42 to-navy-950/72" />
-        <div className="absolute inset-0 -z-10 bg-radial-fade" />
-        {/* Drifting node network. Sits above the vignette so the lines stay
-            visible, but below the text, which is in a z-0 container. */}
-        <ParticleField className="absolute inset-0 -z-10 h-full w-full" />
+        <div
+          aria-hidden
+          className="absolute -bottom-48 -left-40 -z-10 h-[460px] w-[460px] rounded-full bg-brand/10 blur-3xl"
+        />
+        {/* Drifting node network, tuned for a light background. */}
+        <ParticleField tone="light" className="absolute inset-0 -z-10 h-full w-full" />
 
         <Container size="wide" className="relative py-section md:py-[140px] text-center">
           <Reveal>
-            <p className="text-caption md:text-body-sm uppercase tracking-[0.32em] text-navy-100 font-semibold mb-xl">
+            <p className="text-caption md:text-body-sm uppercase tracking-[0.32em] text-accent-hover font-semibold mb-xl">
               {site.name} · IT support across {site.region}
             </p>
-            <h1 className="text-white text-balance max-w-5xl mx-auto drop-shadow-[0_2px_24px_rgba(0,0,0,0.5)]
+            <h1 className="text-navy-900 text-balance max-w-5xl mx-auto
                            text-[40px] leading-[1.15] tracking-[-0.01em]
                            md:text-[64px] md:leading-[1.12]
                            font-bold">
               Expert IT support for businesses across {site.region}
             </h1>
-            <p className="mt-xl text-body-lg md:text-[20px] md:leading-[32px] text-navy-100 max-w-2xl mx-auto">
+            <p className="mt-xl text-body-lg md:text-[20px] md:leading-[32px] text-muted max-w-2xl mx-auto">
               {site.name} is your dedicated IT team, ready to assist whenever you need us. Straightforward,
               jargon-free IT support — 24/7.
             </p>
@@ -133,7 +132,7 @@ export default function HomePage() {
             </div>
             <div className="mt-xxl flex flex-wrap justify-center gap-x-xl gap-y-md">
               {heroBadges.map((b) => (
-                <div key={b.label} className="inline-flex items-center gap-sm text-body-sm text-navy-100">
+                <div key={b.label} className="inline-flex items-center gap-sm text-body-sm text-muted">
                   <b.icon className="h-4 w-4 text-accent" />
                   {b.label}
                 </div>

@@ -14,7 +14,14 @@ type Particle = { x: number; y: number; vx: number; vy: number };
  * Respects prefers-reduced-motion by painting a single static frame, and pauses
  * entirely when scrolled out of view so it costs nothing further down the page.
  */
-export function ParticleField({ className }: { className?: string }) {
+export function ParticleField({
+  className,
+  tone = 'dark',
+}: {
+  className?: string;
+  /** 'dark' paints light nodes for a navy background; 'light' paints navy nodes for a white one. */
+  tone?: 'dark' | 'light';
+}) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -93,7 +100,10 @@ export function ParticleField({ className }: { className?: string }) {
           // their span instead of fading almost immediately.
           const alpha = Math.sqrt(1 - dist / linkDist) * mask;
           if (alpha <= 0.01) continue;
-          ctx.strokeStyle = `rgba(195, 225, 255, ${alpha})`;
+          ctx.strokeStyle =
+            tone === 'light'
+              ? `rgba(31, 108, 190, ${alpha * 0.55})`
+              : `rgba(195, 225, 255, ${alpha})`;
           ctx.lineWidth = 1.4;
           ctx.beginPath();
           ctx.moveTo(p.x, p.y);
@@ -107,7 +117,10 @@ export function ParticleField({ className }: { className?: string }) {
       for (const p of particles) {
         const mask = edgeWeight(p.x);
         if (mask <= 0.01) continue;
-        ctx.fillStyle = `rgba(240, 248, 255, ${Math.min(1, 1.5 * mask)})`;
+        ctx.fillStyle =
+          tone === 'light'
+            ? `rgba(28, 55, 99, ${Math.min(1, 1.1 * mask)})`
+            : `rgba(240, 248, 255, ${Math.min(1, 1.5 * mask)})`;
         ctx.beginPath();
         ctx.arc(p.x, p.y, 2.3, 0, Math.PI * 2);
         ctx.fill();
@@ -161,7 +174,7 @@ export function ParticleField({ className }: { className?: string }) {
       window.removeEventListener('resize', onResize);
       io.disconnect();
     };
-  }, []);
+  }, [tone]);
 
   return <canvas ref={canvasRef} aria-hidden className={className} />;
 }
