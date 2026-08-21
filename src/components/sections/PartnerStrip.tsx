@@ -6,8 +6,8 @@ export function PartnerStrip() {
   const loop = [...partners, ...partners];
 
   return (
-    <section className="bg-navy-950 py-lg md:py-xl border-y border-navy-800">
-      <p className="text-caption uppercase tracking-[0.32em] text-navy-300 font-semibold text-center mb-lg">
+    <section className="bg-surface py-lg md:py-xl border-y border-line">
+      <p className="text-caption uppercase tracking-[0.32em] text-muted font-semibold text-center mb-lg">
         Trusted partners & certifications
       </p>
 
@@ -25,7 +25,7 @@ export function PartnerStrip() {
           {loop.map((p, i) => (
             <div
               key={`${p.name}-${i}`}
-              className="shrink-0 flex items-center justify-center h-10 md:h-12 w-[120px] md:w-[140px] px-sm bg-white rounded-sm"
+              className="shrink-0 flex items-center justify-center h-10 md:h-12 w-[120px] md:w-[140px] px-sm bg-white rounded-sm border border-line"
               aria-label={p.name}
               title={p.name}
             >

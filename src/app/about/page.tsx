@@ -65,17 +65,17 @@ const stats = [
 export default function AboutPage() {
   return (
     <>
-      <Section tone="navy" className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-900 to-navy-700" />
-        <div className="absolute -top-32 -right-32 h-[420px] w-[420px] rounded-full bg-accent/15 blur-3xl" />
+      <Section tone="tinted" className="relative overflow-hidden">
+        <div aria-hidden className="absolute -top-32 -right-32 h-[420px] w-[420px] rounded-full bg-accent/15 blur-3xl" />
+        <div aria-hidden className="absolute -bottom-40 -left-32 h-[360px] w-[360px] rounded-full bg-brand/10 blur-3xl" />
         <Container size="wide" className="relative">
           <div className="max-w-3xl">
             <Reveal>
               <SectionEyebrow>About our business</SectionEyebrow>
-              <h1 className="text-h1 md:text-display text-white text-balance">
+              <h1 className="text-h1 md:text-display text-navy-900 text-balance">
                 Who are we?
               </h1>
-              <p className="mt-lg text-body-lg text-navy-100 max-w-2xl">
+              <p className="mt-lg text-body-lg text-muted max-w-2xl">
                 At {site.name}, we provide expert IT and telecom services to keep your business running smoothly.
                 Whether you&apos;re based in Agodi, Bodija, Iyaganku, Jericho or anywhere across Ibadan and the rest of
                 Nigeria — our tailored solutions ensure your technology works seamlessly.

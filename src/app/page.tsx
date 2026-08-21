@@ -109,7 +109,7 @@ export default function HomePage() {
 
         <Container size="wide" className="relative py-section md:py-[140px] text-center">
           <Reveal>
-            <p className="text-caption md:text-body-sm uppercase tracking-[0.32em] text-accent-hover font-semibold mb-xl">
+            <p className="text-caption md:text-body-sm uppercase tracking-[0.32em] text-accent-ink font-semibold mb-xl">
               {site.name} · IT support across {site.region}
             </p>
             <h1 className="text-navy-900 text-balance max-w-5xl mx-auto

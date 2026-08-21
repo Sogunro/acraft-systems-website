@@ -15,6 +15,48 @@
   ::selection {
     @apply bg-accent text-white;
   }
+  /* Visible keyboard focus on every interactive element. Browser defaults are
+     inconsistent and near-invisible on a light navy palette. */
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-white rounded-sm;
+  }
+  input,
+  textarea,
+  select {
+    caret-color: theme('colors.accent.DEFAULT');
+  }
+  /* Themed scrollbar rather than the platform default. */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: theme('colors.navy.300') transparent;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-navy-200;
+    border: 2px solid #fff;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-navy-300;
+  }
+  /* Honour reduced-motion globally, including the marquee and smooth scroll. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
 }
 
 @layer utilities {

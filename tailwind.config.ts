@@ -37,6 +37,9 @@ const config: Config = {
         accent: {
           DEFAULT: '#1FA8FF', // bright cyan-blue — matches the hero data-centre LEDs
           hover: '#0E86D6',
+          // Darkened for small text on light surfaces: the DEFAULT is 2.6:1 on
+          // white, well under the 4.5:1 needed for body-size type.
+          ink: '#0B6FB8',
         },
         // Secondary accent — the red facet in the Acraft wordmark. Used sparingly
         // to mark the highest-priority items so the blue does not read as flat.

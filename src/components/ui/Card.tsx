@@ -45,7 +45,7 @@ export function ServiceCard({
       <div className="p-lg flex flex-col flex-1">
         <h3 className="text-h4 text-navy-900 mb-sm">{title}</h3>
         <p className="text-body text-muted leading-relaxed flex-1">{description}</p>
-        <span className="mt-base inline-flex items-center gap-xs text-body-sm font-semibold text-accent">
+        <span className="mt-base inline-flex items-center gap-xs text-body-sm font-semibold text-accent-ink">
           Learn more
           <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
         </span>

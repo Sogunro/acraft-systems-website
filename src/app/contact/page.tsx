@@ -19,17 +19,17 @@ export default function ContactPage() {
 
   return (
     <>
-      <Section tone="navy" className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-900 to-navy-700" />
-        <div className="absolute -top-32 -right-32 h-[420px] w-[420px] rounded-full bg-accent/15 blur-3xl" />
+      <Section tone="tinted" className="relative overflow-hidden">
+        <div aria-hidden className="absolute -top-32 -right-32 h-[420px] w-[420px] rounded-full bg-accent/15 blur-3xl" />
+        <div aria-hidden className="absolute -bottom-40 -left-32 h-[360px] w-[360px] rounded-full bg-brand/10 blur-3xl" />
         <Container size="wide" className="relative">
           <div className="max-w-3xl">
             <Reveal>
               <SectionEyebrow>Contact us</SectionEyebrow>
-              <h1 className="text-h1 md:text-display text-white text-balance">
+              <h1 className="text-h1 md:text-display text-navy-900 text-balance">
                 Tell us what you need
               </h1>
-              <p className="mt-lg text-body-lg text-navy-100 max-w-2xl">
+              <p className="mt-lg text-body-lg text-muted max-w-2xl">
                 Drop a few lines below and a senior engineer will respond within one business hour. No
                 sales-handover, no chatbot.
               </p>

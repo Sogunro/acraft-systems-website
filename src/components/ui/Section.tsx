@@ -8,12 +8,15 @@ export function Section({
 }: {
   children: React.ReactNode;
   className?: string;
-  tone?: 'default' | 'surface' | 'navy';
+  tone?: 'default' | 'surface' | 'tinted' | 'navy';
   id?: string;
 }) {
   const tones = {
     default: 'bg-white text-ink',
     surface: 'bg-surface text-ink',
+    // Light page-hero wash — same family as the homepage hero so every entry
+    // point on the site opens light rather than on a slab of navy.
+    tinted: 'bg-gradient-to-br from-navy-50 via-white to-accent/10 text-ink',
     navy: 'bg-navy-900 text-white',
   };
   return (
@@ -25,7 +28,7 @@ export function Section({
 
 export function SectionEyebrow({ children }: { children: React.ReactNode }) {
   return (
-    <p className="text-caption uppercase tracking-[0.18em] text-accent font-semibold mb-md">
+    <p className="text-caption uppercase tracking-[0.18em] text-accent-ink font-semibold mb-md">
       {children}
     </p>
   );

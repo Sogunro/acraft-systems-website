@@ -56,7 +56,7 @@ export function Header() {
                 </button>
                 <div
                   className={cn(
-                    'absolute left-0 top-full pt-sm min-w-[320px] z-50 transition-all',
+                    'absolute left-0 top-full pt-sm min-w-[320px] z-50 transition-[opacity,visibility] duration-150 ease-out',
                     openSection === item.label ? 'opacity-100 visible' : 'opacity-0 invisible',
                   )}
                 >

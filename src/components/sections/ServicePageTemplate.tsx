@@ -23,16 +23,16 @@ export function ServicePageTemplate(props: ServicePageProps) {
   return (
     <>
       {/* Hero */}
-      <Section tone="navy" className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-900 to-navy-700" />
-        <div className="absolute -top-32 -right-32 h-[420px] w-[420px] rounded-full bg-accent/15 blur-3xl" />
+      <Section tone="tinted" className="relative overflow-hidden">
+        <div aria-hidden className="absolute -top-32 -right-32 h-[420px] w-[420px] rounded-full bg-accent/15 blur-3xl" />
+        <div aria-hidden className="absolute -bottom-40 -left-32 h-[360px] w-[360px] rounded-full bg-brand/10 blur-3xl" />
         <Container size="wide" className="relative">
           <div className="grid lg:grid-cols-12 gap-xl items-center">
             <div className="lg:col-span-7">
               <Reveal>
                 <SectionEyebrow>{eyebrow}</SectionEyebrow>
-                <h1 className="text-h1 md:text-display text-white">{title}</h1>
-                <p className="mt-base text-body-lg text-navy-100 max-w-xl">{lede}</p>
+                <h1 className="text-h1 md:text-display text-navy-900">{title}</h1>
+                <p className="mt-base text-body-lg text-muted max-w-xl">{lede}</p>
                 <div className="mt-lg flex flex-col sm:flex-row gap-md">
                   <Button href="/contact" variant="primary" size="lg">Get a quote</Button>
                   <Button href="/it-services" variant="outline" size="lg">All services</Button>
@@ -41,7 +41,7 @@ export function ServicePageTemplate(props: ServicePageProps) {
             </div>
             <div className="lg:col-span-5">
               <Reveal delay={0.1}>
-                <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-navy-700 shadow-elevated">
+                <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-line shadow-elevated">
                   <Image
                     src={imageSrc}
                     alt={imageAlt ?? title}
@@ -76,13 +76,10 @@ export function ServicePageTemplate(props: ServicePageProps) {
                 <Reveal key={b.title} delay={i * 0.05}>
                   <div className="relative bg-white border border-line rounded-lg p-lg h-full shadow-card overflow-hidden">
                     <span className={`absolute top-0 inset-x-0 h-1 ${t.bar}`} />
-                    <div className="flex items-center justify-between mb-base">
+                    <div className="mb-base">
                       <div className={`h-14 w-14 rounded-lg flex items-center justify-center shadow-sm ${t.tile}`}>
                         <t.Icon className="h-7 w-7" strokeWidth={2.25} />
                       </div>
-                      <span className="text-h2 font-bold text-navy-100 leading-none select-none">
-                        {String(i + 1).padStart(2, '0')}
-                      </span>
                     </div>
                     <h3 className="text-h4 text-navy-900 mb-sm">{b.title}</h3>
                     <p className="text-body text-muted leading-relaxed">{b.description}</p>

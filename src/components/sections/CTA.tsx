@@ -24,7 +24,7 @@ export function CTA({
             <Button href="/contact" variant="primary" size="lg">
               Contact us
             </Button>
-            <Button href={`tel:${site.phoneDial}`} variant="outline" size="lg">
+            <Button href={`tel:${site.phoneDial}`} variant="outlineLight" size="lg">
               Call {site.phone}
             </Button>
           </div>
