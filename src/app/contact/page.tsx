@@ -77,10 +77,11 @@ export default function ContactPage() {
                       >
                         <option value="" disabled>Select a service</option>
                         <option>Managed IT Support</option>
-                        <option>Cybersecurity</option>
-                        <option>Microsoft 365</option>
-                        <option>Connectivity / Broadband</option>
-                        <option>Cloud Phone System</option>
+                        <option>Managed Cybersecurity</option>
+                        <option>Bespoke Software Engineering</option>
+                        <option>Data Centre Management</option>
+                        <option>IT Consulting</option>
+                        <option>Project Management</option>
                         <option>Other</option>
                       </select>
                     </div>

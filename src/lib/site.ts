@@ -7,8 +7,8 @@ export const site = {
   // Unspaced E.164 form for `tel:` hrefs — dialers handle this reliably,
   // whereas spaces in a tel: URI are not guaranteed to be parsed.
   phoneDial: '+2348156595194',
-  email: 'info@acraftsystems.com',
-  address: '13 Onikoko Avenue, Agodi GRA, Ibadan',
+  email: 'support@acraftsystems.com',
+  address: '17B Senate Crescent, Isheri-Magodo, Lagos',
   hours: 'Mon–Fri, 8am–6pm WAT · 24/7 emergency support',
 } as const;
 
@@ -60,34 +60,6 @@ export const nav: NavItem[] = [
         href: '/cyber/cyber-essentials-assessor',
         description: 'Independent assessment by certified experts.',
       },
-    ],
-  },
-  {
-    label: 'Connectivity',
-    href: '/connectivity',
-    children: [
-      { label: 'Microsoft 365', href: '/connectivity/microsoft-365', description: 'Email, Teams, OneDrive — fully managed.' },
-      { label: 'Business Broadband', href: '/connectivity/business-broadband', description: 'Reliable, business-grade internet access.' },
-      { label: 'Leased Lines', href: '/connectivity/leased-lines', description: 'Dedicated symmetric bandwidth with SLAs.' },
-      { label: 'Mobile Internet', href: '/connectivity/mobile-internet', description: '4G/5G failover and roaming connectivity.' },
-      { label: 'Guest WiFi', href: '/connectivity/guest-wifi', description: 'Secure, branded WiFi for visitors and staff.' },
-    ],
-  },
-  {
-    label: 'Mobile',
-    href: '/mobile',
-    children: [
-      { label: 'SIM Only', href: '/mobile/sim-only', description: 'Flexible SIM-only plans for business.' },
-      { label: 'Mobile with Handset', href: '/mobile/mobile-with-handset', description: 'Latest handsets bundled with airtime.' },
-    ],
-  },
-  {
-    label: 'Telecoms',
-    href: '/telecoms',
-    children: [
-      { label: 'Cloud Phone System', href: '/telecoms/cloud-phone-system', description: 'Modern VoIP, hosted in the cloud.' },
-      { label: 'Contact Centre', href: '/telecoms/contact-centre', description: 'Omnichannel customer engagement at scale.' },
-      { label: 'Microsoft Teams', href: '/telecoms/microsoft-teams', description: 'Teams calling and meeting room kits.' },
     ],
   },
   { label: 'Contact Us', href: '/contact' },

@@ -38,13 +38,13 @@ const services = [
   {
     title: 'Bespoke Software Engineering',
     description: 'Custom applications and integrations built around how your business actually works.',
-    href: '/connectivity/microsoft-365',
+    href: '/it-services',
     imageSrc: '/images/cards/card-m365.png',
   },
   {
     title: 'Data Centre Management',
     description: 'Racks, power, cooling and connectivity — monitored, maintained and kept online.',
-    href: '/telecoms/cloud-phone-system',
+    href: '/it-services',
     imageSrc: '/images/cards/card-cloud-phone.png',
   },
   {
